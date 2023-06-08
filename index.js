@@ -9,7 +9,7 @@ const questions = [
     {
         type: 'input',
         name: 'github',
-        message: ' What is your GitHub username?',
+        message: 'What is your GitHub username?',
     },
     {
         type: 'input',
@@ -19,23 +19,23 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'what is your project title?',
+        message: 'What is your project title?',
     },
     {
         type: 'input',
         name: 'description',
-        message: 'Write a descripton of your project',
+        message: 'Write a descripton of your project:',
     },
     {
         type: 'list',
         name: 'license',
         message: 'What license does your project use?',
-        choices: ['MIT','APACHE 2.0', 'Mozilla Public License 2.0' , 'BSD 3' , 'None'],
+        choices: ['MIT','APACHE 2.0', 'MPL_2.0' , 'BSD 3' , 'None'],
     },
     {
         type: 'input',
         name: 'usage',
-        message: ' Write how the project is used ',
+        message: 'How is the project is used?',
     },
     {
         type: 'input',
@@ -46,7 +46,7 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'Write the installlation instructions of your project',
+        message: 'What are the installlation instructions of your project?',
     },
     
 ];

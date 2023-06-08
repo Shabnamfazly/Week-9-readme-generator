@@ -1,35 +1,43 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+
 function renderLicenseBadge(license) {
-  let licenseBadge;
-  if (license === 'MIT'){
-    licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-  } else if (license === 'APACHE 2.0'){
-    licenseBadge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
-  } else {
-    licenseBadge = ""
-  }
-  return licenseBadge;
-  {
-    
-  }
+
+  if (license !== "None"){
+    return` [![License: ${license}](https://img.shields.io/badge/License-${license}-yellow.svg)](https://opensource.org/licenses/${license})`
+  } 
+  return ""
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-// function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license !== "None"){
+    return `\n*[LICENSE](#license)\n`
+  }
+  return ""
+}
 
-// // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
-// function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown({github , email , title, description , license}) {
+function renderLicenseSection(license) {
+  if (license !== "None"){
+    return `This project is licensed under ${license} license`
+  }
+  return ""
+  
+}
+
+function generateMarkdown({github , email , title, description , license, usage , fileName, installation}) {
   return `
   ${renderLicenseBadge(license)}
   
   ## TITLE
   ${title}
+
+  ## TABLE OF CONTENTS
+  *[DESCRIPTION](#description)\n
+  *[EMAIL](#email)\n
+  *[GITHUB](#github)\n
+  *[USAGE](#usage)\n
+  *[FILE NAME](#fileName)\n
+  *[INSTALLATION](#installation)\n
+  ${renderLicenseLink(license)}
 
   ## DESCRIPTION
   ${description}
@@ -38,7 +46,18 @@ function generateMarkdown({github , email , title, description , license}) {
   ${email}
 
   ## GITHUB
-  ${github}
+  [${github}](https://github.com/${github}/)
+
+  ## USAGE
+  ${usage}
+
+  ## FILE NAME
+  ${fileName}
+
+  ## INSTALLATION
+  ${installation}
+
+  ${renderLicenseSection(license)}
 
 `;
 }

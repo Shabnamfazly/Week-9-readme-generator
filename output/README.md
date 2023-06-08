@@ -1,15 +1,43 @@
 
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   ## TITLE
-  wb
+  sample
+
+  ## TABLE OF CONTENTS
+  *[DESCRIPTION](#description)
+
+  *[EMAIL](#email)
+
+  *[GITHUB](#github)
+
+  *[USAGE](#usage)
+
+  *[FILE NAME](#fileName)
+
+  *[INSTALLATION](#installation)
+
+  
+*[LICENSE](#license)
+
 
   ## DESCRIPTION
-  shows weather
+  sample
 
   ## EMAIL
   shabnamfazly@gmail.com
 
   ## GITHUB
-  shabnamfazly
+  [shabnamfazly](https://github.com/shabnamfazly/)
+
+  ## USAGE
+  sample
+
+  ## FILE NAME
+  sample
+
+  ## INSTALLATION
+  sample
+
+  This project is licensed under MIT license
 
